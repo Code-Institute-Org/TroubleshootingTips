@@ -275,15 +275,15 @@
                                 <li>
                                     <p><strong>If you’re stuck in an editor, don’t panic -</strong><br />
                                         <ul>
-                                            <li><em>Less -</em> “less” is a pager program that may automatically open on the command line whenever you ask to read a very long file or output (e.g. when using “<code>git log</code>” on a repository with lots
+                                            <li><em>Less -</em> “<code>less</code>” is a pager program that may automatically open on the command line whenever you ask to read a very long file or output (e.g. when using “<code>git log</code>” on a repository with lots
                                                 of history).</p>
-                                    <p>You can use the arrow keys or the page up/down keys to scroll around in Less. You can also use the “/” key to search for a specific part of the text and the “<code>n</code>” key to go to the next match.</p>
+                                    <p>You can use the arrow keys or the page up/down keys to scroll around in Less. You can also use the “/” key to search for a specific part of the text and the “n” key to go to the next match.</p>
                                     <p>Use the “q” key to quit Less.</p>
                                     </li>
 
                                     <li>
                                         <p><em>Vim -</em> “vim” (VI improved) is the default editor used in Bash, and though it’s very powerful, it’s possibly the hardest editor for beginners to learn. The most common reason students get stuck in vim is
-                                            when they use “<code>git commit</code>” without the “-m” parameter, so Vim opens up for them to add a message manually.</p>
+                                            when they use “<code>git commit</code>” without the “<code>-m</code>” parameter, so Vim opens up for them to add a message manually.</p>
                                         <p>Vim is a mode-based editor that has several distinct modes of operation. Vim always starts in the “normal mode” where you can give it commands to change the text, but cannot edit it directly. Click “i” to go into
                                             the “insert mode” and edit the text directly, and then click the Escape key to go back to the normal mode.</p>
                                         <p>When you’re done, click Shift+Z+Z to save the text and exit. Or, type “<code>:q!</code>” to quit without saving.</p>
@@ -296,7 +296,7 @@
                                 <li>
                                     <p><strong>If you’re stuck in a long operation, don’t panic -</strong> If you started a command that seems to run forever, or one that is actually intended to run forever until interrupted (like “<code>http-server</code>”),
                                         you can usually stop it by clicking Ctrl+C, which sends it an interrupt signal, that makes it terminate (except if the program is built to actively resist it).</p>
-                                    <p>Alternatively, in bash (but not in cmd), you can also click Ctrl+Z to temporarily stop the program, and then run “fg” to resume it in the foreground, or “bg” to resume it in the background, and thus letting you type
+                                    <p>Alternatively, in bash (but not in cmd), you can also click Ctrl+Z to temporarily stop the program, and then run “<code>fg</code>” to resume it in the foreground, or “<code>bg</code>” to resume it in the background, and thus letting you type
                                         in other commands in the foreground (though in most cases, when you want to run multiple command line programs, it’s easier to just open a new terminal). If clicking Ctrl+C doesn’t terminate the program, you can
                                         also click Ctrl+Z to stop the program and then run “<code>kill -9 %1</code>” to forcefully kill it (“-9” signifies the kill signal, and “%1” points to the first program currently running in the shell). Or, alternatively,
                                         you can of course also just close the terminal window.</p>
@@ -305,7 +305,7 @@
                                     <p>This is relatively straightforward to handle if you know what the other process is and can either go back to using that one, or kill it manually. It’s a little trickier if you don’t know what that other running process
                                         is.
                                     </p>
-                                    <p>Fear not! If you’re using Mac or Linux, you can use the following command to find this out:<br /> “lsof -i tcp:”<br /> By default, Django and Flask have their own distinct port numbers i.e. 8000 and 5000 respectively.
+                                    <p>Fear not! If you’re using Mac or Linux, you can use the following command to find this out:<br /> “<code>lsof -i tcp:</code>”<br /> By default, Django and Flask have their own distinct port numbers i.e. 8000 and 5000 respectively.
                                         So when you experience this error on Django, the command you would enter is:<br /> “<code>lsof -i tcp:8000</code>”</p>
                                     <p>This command should return an output similar to this:</p>
                                     <img src="img/lsof-command-460x42.png" alt="" width="460" height="42" />
