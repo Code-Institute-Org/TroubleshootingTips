@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Troubleshooting Tips</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-masthead navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="Code Institute Logo"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">LMS</a></li>
+                    <li><a href="#">Slack</a></li>
+                    <li><a href="#">Troubleshooting Tips</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section>
+            <article>
+                <h2>TroubleShooting Tips Introduction</h2>
+                <p>Our main purpose here at Code Institute is to help you become good coders.</p>
+                <p>Coding is the art of problem-solving using precise commands, which can be challenging. It’s almost like knowing the right magic incantations, or like getting your wishes fulfilled by a genie. And just like with genies, computers do what
+                    you told them, which is often not what you intended them to do (at least not on the first try).</p>
+                <p>So given this difficulty in structuring your ideas into precise commands, it’s an invaluable skill to be able to persevere and overcome those (very common) situations when your commands just don’t work they way you expected them to, and
+                    you feel as if the computer is conspiring against you. It isn’t. The computer doesn’t hate you, but it doesn’t like you either. Essentially, it’s just clay in your hand, and it is up to you to work hard to mould it into the shape you
+                    want it to be.</p>
+                <p>As with any other endeavor, coding can be challenging. Some argue that it’s harder than other arts, because coding isn’t limited in the way that physical creative pursuits are. Unlike with physical activities, such as sculpting, in which
+                    the material’s physical properties enforce constraints that limit and guide your work, coding is purely mental, and every common programming language allows you to solve any problem that can be solved. (If you’re curious about this,
+                    look up the concept of Turing Completeness). So the only general limit on your ability to write code to perform a task is to be able to clearly reason about that task.</p>
+                <p>In other words, you can create anything you can imagine, but only if you can imagine it clearly.<br /> This is very hard. The main obstacle for coders is complexity. You can only achieve this by clarifying your thinking and making commands
+                    as simple as possible (but no less!). And then, there is nothing to stop you, and you’ll be able to create anything you can put your mind to.</p>
+                <p>On your journey to becoming a good coder, you will struggle. Be strong, the only path forward is through this struggle. During your work you might feel that you are “stuck”. In general, being stuck means that you’ve been relying on a mental
+                    process that can take you no further, so to get “unstuck” you should take a step back and attempt to use a different process to advance. Below are suggestions for many such processes and some tools that you can use to try and get yourself
+                    unstuck.
+                </p>
+            </article>
+            <h4>Learning Outcomes</h4>
+            <p>Topics include:</p>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          General Troubleshooting Tips
+        </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul>
+                                <li><strong>Write pseudocode</strong> - <a href="https://en.wikipedia.org/wiki/Pseudocode" target="_blank">Pseudocode</a> is an informal description of a computer program. Unlike regular coding, when writing pseudocode, you
+                                    don’t care about writing your code to fit any specific language, you just try to write down in English (or your native language of choice) the logical steps that should be taken to solve the task.<br />
+                                    <br /> As an easy example, let’s say that your task is to find the maximum number in a list. After thinking a bit about the problem, you might write the following pseudocode:<br /> If the list is empty, then the task
+                                    is meaningless, so return an error message.<br /> Otherwise the list has at least one element, so put its value into a variable named <strong>largest. </strong>Then go over all of the other elements in the list, and
+                                    for each of them that’s larger than the current value of <strong>largest</strong>, put that new value into <strong>largest</strong>. Finally, return the value of <strong>largest</strong>.<br />
+                                    <br /> To check whether your pseudocode is effective, you can then try to (mentally or using pen and paper) “walk” it through several examples of inputs, and adapt the pseudocode as needed. Once you have pseudocode
+                                    that you’re satisfied with, it’s often relatively easy to turn it into actual working code.<br />
+                                    <br /> When you approach a new and unfamiliar task, you may prefer to start with writing pseudocode and only then write the actual code. Alternatively, if you already have a good idea of how to solve the task, you might
+                                    start by immediately writing regular code and only turn to pseudocode if you get stuck and suspect that there’s a problem with the logic of your code.<br />
+                                    <br />
+                                </li>
+                                <li><strong>Rubber ducking</strong> - You know how sometimes you start explaining your problem to someone and then, in the middle of your explanation, you figure out the solution yourself? <br />
+                                    <br /> Well, coders invented the term <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging" target="_blank">Rubber Ducking</a> to describe the method in which you try to explain your problem and any existing
+                                    code to an inanimate object (it might as well be a rubber duck), with the hope that you’d arrive at the solution through this act of forcing yourself to explain the issue. <br />
+                                    <br /> Assuming that you don’t have a rubber duck, the method works almost as well if you put your problem in writing. Though it does seem that there’s a cognitive benefit to speaking your problem out loud.</li>
+                                <li><strong>Check your syntax</strong> - If you wrote code that doesn’t work at all (as opposed to working but doing something other than you expected), you probably have a syntax error somewhere. In some cases, you’ll get
+                                    a nice error message telling you exactly where the problem is, but in other cases you’ll get very unhelpful error messages. The best way to deal with unclear syntax issues is to comment-out parts of your code as necessary
+                                    until the syntax is ok, and then put them back one by one to find the single part that’s mis-written. The solution then is often trivial (e.g. just a typo), but in other cases it might require you to look at the language’s
+                                    syntax documentation.
+                                </li>
+                                <br />
+                                <li><strong>Compare to a working version</strong><br /> Sometimes you may find yourself with a piece of code that isn’t working as intended, but also have a version that does work as it should, such as an older version of your
+                                    own or an example from the official documentation. In such cases, a recommended way of figuring out what’s wrong is to use a <strong>diff</strong> tool to compare the broken code to the working code. There are many
+                                    free tools to do so, such as <a href="http://meldmerge.org/" target="_blank">Meld</a> and the online <a href="http://prettydiff.com/" target="_blank">prettydiff</a>. These tools will let you look at the two versions
+                                    side-by-side and will highlight the differences. In many cases, after seeing the differences the solution will be easy (occasionally even just a difference between an upper and lower-cased letter).<br />
+                                    <br />
+                                </li>
+                                <li><strong>Debug your code</strong><br /> When your code “works”, but doesn’t do what you expected it to do, you have a “<a href="https://en.wikipedia.org/wiki/Software_bug" target="_blank">bug</a>” and to get rid of this
+                                    bug, you’ll need embark upon the ancient and intricate art of <a href="https://en.wikipedia.org/wiki/Debugging" target="_blank">debugging</a>. In some cases, debugging is very simple, but in other cases, it can be an
+                                    incredibly difficult and long process.<br />
+                                    <br /> The main mental tool for debugging is of forming and testing a series of hypotheses. First you form a hypothesis such as “the bug only occurs when there are negative numbers in the input,” and then you try to
+                                    test it.
+
+                                    <br />Based on the form of the hypothesis, it might be better to try to prove, or falsify it. In the most basic case, you might just try your program on different inputs and see if your hypothesis holds true. If it
+                                    is true, try to refine your hypothesis, e.g. “This function mishandles negative numbers”, and if the hypothesis proved false, try to form an alternative hypothesis. Whenever possible, try to form a set of hypotheses
+                                    that together make up the entire realm of possibility, and then you can use the process of elimination to reach at the exact problem. Remember Sherlock Holmes’s saying - “when you have eliminated the impossible, whatever
+                                    remains, however improbable, must be the truth”.<br />
+                                    <br /> One good way of testing a hypothesis is known as Tracing (or Stepping) - going through the code line by line as it is running on some input and inspect (often known as “watch”) the value of the relevant variables.
+                                    In practice, most bugs are essentially manifested in a single variable being assigned the wrong value, and then the wrong value is propagated throughout the program.<br />
+                                    <br /> Many developing tools exist to help you trace and otherwise debug your programs, and these differ by language.<br />
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><strong>Go a level of abstraction down</strong> - Modern coding relies on many levels of abstraction, each built on top of the other. For example, the jQuery library has a <code>.each()</code> method that relies on Javascript’s
+                                    for loop, which relies on the browser’s javascript engine (usually written in C++), which relies on the operating system (which might be written in yet another language), which relies on assembly code, which relies
+                                    on machine code, which relies on the hardware, which in turn relies on the laws of physics as we know them.<br />
+                                    <br /> It is impossible for a single person to know how all of these levels work, and we have to rely on the abstractions to perform our day-to-day tasks. In general, these abstractions are quite effective and perform
+                                    well for the most common tasks, and allow us to ignore the underlying levels. But in the end, all abstractions are “leaky” - in some (uncommon) cases, you will find that the abstraction doesn’t quite work, and you need
+                                    to investigate what’s going on in the level below. <br />
+                                    <br /> This is particularly true if you’re using a specific tool/library/function that doesn’t seem to do what you want it to. When faced with such a situation, see if perhaps you can write the code to solve the task
+                                    yourself, in a lower level of abstraction without relying on that tool. Doing so will generally help you understand both the problem and the abstraction better. Then you can either keep the code you’ve written, or rely
+                                    on your new understanding to create a better solution using the abstraction.<br />
+                                    <br /> As a simple example, if you use javascript’s “<code>Math.max()</code>” function to find the maximum number, you may find that it sometimes returns <code>NaN</code>, or <code>-Infinity</code>. If this doesn’t
+                                    suit the specific task you’re working on, you might prefer to write this functionality yourself.<br />
+                                    <br />
+                                </li>
+                                <li><strong>Search it</strong> - Sometimes, you just don’t have the information you need to solve a particularly problem. In such cases try to search the web for any relevant documentation, tutorials, tips, and answers to questions.
+                                    <a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a>, which is the largest Q&amp;A site for developers, can be especially helpful in this instance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Troubleshooting HTML and CSS issues
+        </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p><strong>Validate your syntax -</strong> Browsers are infamous for accepting HTML and CSS that has invalid parts and doing whatever they can with the valid parts. So when you write incorrect markup or styling rules,
+                                        instead of getting an error, you’ll just have some parts of your code not working, and you may not know why.</p>
+                                    <p>To avoid such syntax issues, it’s a best practice to run your HTML and CSS code through the official <a href="https://validator.w3.org/" target="_blank">HTML validator</a> and <a href="https://jigsaw.w3.org/css-validator"
+                                            target="_blank">CSS validator</a> (respectively).</p>
+                                    <p>A particular issue to look out for is to make sure that you don’t reuse the same id attribute on multiple elements. If you do, functions that rely on getting elements by their id would not work as expected.</p>
+                                    <p>Instead, use classes for styling multiple related elements. The only common validation issue that you may choose to ignore is the warning about an attribute not being valid. </p>
+                                </li>
+                                <br />
+                                <li>
+                                    <p><strong>Check your indentation -</strong> Even when your HTML is valid, you may have errors in your markup due to inconsistent indentation. Bad indentation may hide other issues and cause you lots of confusion when
+                                        debugging. So the recommendation is to always be consistent in your indentation for each file, and use 2 spaces, 4 spaces or a tab to indent each inner HTML level, and likewise to indent CSS properties. Your future
+                                        self will thank you.</p>
+                                    <p>Note that when using spaces for indentation, you should never actually add the spaces yourself, your editor should add them automatically when you press the TAB key. Also, your editor may have a tool to automatically
+                                        re-indent your code, in Sublime for example, you can select the relevant lines in your file, hit Ctrl+Shift+P (or Cmd+Shift+P on a mac), search for “reindent” and click Enter.</p>
+                                </li>
+                                <br />
+                                <li>
+                                    <p><strong>Use the developer tools -</strong> When your markup or styling isn’t working as expected, use the Elements tab in the browser’s developer tools (available via the Inspect item in the right-click menu) to see
+                                        whether all the elements appear in the DOM and are styled as you planned to.</p>
+                                    <p>You can also use the Elements tab to try out new css rules or disable existing ones - helping you to easily try out new changes, and pinpoint any issues.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Troubleshooting JavaScript issues
+        </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p><strong>Check your syntax -</strong> If your code doesn’t behave as you expected it to, run it through a validation tool such as <a href="http://jshint.com/" target="_blank">JSHint</a>.</p>
+                                    <p>A common issue that JSHint can help you with is missing semicolons. JavaScript has a “feature” called Automatic Semicolon Insertion (ASI), which defines how the JavaScript interpreter will automatically add missing
+                                        semicolons. Unless you really know what you’re doing, opt to always terminate every statement with a semicolon, or explicitly continue it . A particular nasty case concerns “return” statements, where in some cases,
+                                        ASI will put a semicolon at the end of the first line even if you intended the statement to continue into subsequent lines.</p>
+                                </li><br />
+
+                                <li>
+                                    <p><strong>Check your indentation -</strong> Inconsistent indentation often leads to logic bugs. A commonly occurring bug is when a statement that you thought was part of a loop (based on the indentation) is actually outside
+                                        of it (or vice versa). Use a common indentation for each file, with either 4 spaces, or a tab for each inner level.</p>
+                                </li><br />
+
+                                <li>
+                                    <p><strong>Check the console for errors -</strong> The developer tools console in the browser will show you any JavaScript errors in your code or missing resources. Make sure to take a look at it whenever you suspect an
+                                        error.
+                                    </p>
+                                    <p>If you are using external js libraries or frameworks (e.g. jQuery) and encounter unclear errors, switch to the unminified version to get better error messages. Often this just means using the same library file names,
+                                        but without “.min”.</p>
+                                </li><br />
+
+                                <li>
+                                    <p><strong>Debug your code -</strong> When your code works “well”, but just doesn’t do what you intended it to, debug it by printing the values of variables using console.log statements (which then show up in the developer
+                                        tools console), or in more complicated cases, using the Source tab in the developer tools to trace your code step-by-step. JavaScript debugging is explained in Stream 1 -&gt; Javascript Part II -&gt; <a href="http://lms.codeinstitute.net/unit/javascript-external-communication/"
+                                            target="_blank">JavaScript &amp; External Communication</a>.</p>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Python Troubleshooting Tips
+        </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p><strong>Check your syntax -</strong> Use Python’s pep8 tool (either through the command line, or via the <a href="http://pep8online.com/" target="_blank">online version</a>) to help you find potential syntax problems,
+                                        and otherwise improve your code’s style.</p>
+                                    <p>One of the benefits of Python, is that due to its enforced indentation, you cannot have logic bugs due to poor indentation. So that’s a welcome safety net. But you still should strive for consistent indentation for
+                                        better legibility; the Python standard is to always use 4 spaces (and most editors will do so automatically when you press TAB).</p>
+                                </li>
+
+                                <li>
+                                    <p><strong>Carefully read exception messages -</strong> When you get an error, read the exception message carefully - most of Python’s messages are quite good, and will often pinpoint the exact line where you’d need to
+                                        fix the error.</p>
+                                </li>
+
+                                <li>
+                                    <p><strong>Debug your code -</strong> When your code works “well”, but just doesn’t do what you intended it to, debug it by printing the values of variables using print statements, or, in more complicated cases, use either
+                                        pdb or a debugger in your IDE to trace your code step-by-step and find the problem.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Command Line TroubleShooting Tips
+        </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            <p>Many programming tools don’t have graphical interfaces, and instead rely on typing textual commands on the command line, through interacting with a program known as a “shell”. The most commonly used shell by programmers is
+                                Bash (Bourne-again Shell), which we recommend in this class. Most of the advice below would is relevant for other shells as well (e.g. “zsh”).</p>
+                            <p>Another important term you should be familiar with is the “terminal” - the window which provides you with access to the shell. Historically, you would have a full computer working as the terminal, but in modern times we use
+                                terminal emulators which are just a single program on your computer that emulates a terminal.</p>
+                            <p>There are many different terminal programs that you can use, which differ based on your operating system; the only difference between them is in various additional graphical add-ons and shortcuts that provide ease of use. The
+                                actual functionality of the command line is the same for all terminals and only depends on the shell. Two particular terminal emulator program that some advanced students might enjoy are <a href="https://conemu.github.io/"
+                                    target="_blank">ConEMU</a> on Windows and <a href="https://en.wikipedia.org/wiki/Terminator_(terminal_emulator)" target="_blank">Terminator</a> on Linux.</p>
+                            <ul>
+
+                                <li>
+                                    <p><strong>Check your spelling -</strong> The most common issue for beginners to the command line is misspelled commands. Note that the way the command line works is that the first word you put on the command line is the
+                                        command name, and everything else after the space are parameters passed to that command. So whenever you get the error “command not found", make sure that you have no typos in your command.</p>
+                                    <p>Spelling errors in the parameters are also common, but would cause different error messages. Whenever you get any weird error, first check your spelling.</p>
+                                    <p>Give particular attention to capitalisation (the command line is case-sensitive), and to the difference between capital “I” and lowercase “l”.</p>
+                                    <p>When typing long commands or file names, use the TAB key to automatically complete the typing for you (whenever there is only one way to complete it); doing so will save you from many typos.</p>
+                                    <p>Check that you’re in the right directory - Most commands depend on the directory you’re currently in. Make sure that you’re in the right directory by running “<code>pwd</code>” (Print Working Directory), and make sure
+                                        that any other files that you expect are there as well, by running “<code>ls</code>” (list).</p>
+                                </li><br />
+
+                                <li>
+                                    <p><strong>Use the built-in help functionality -</strong> If you’re not sure how any specific command works, try its help functionality, for most commands, just add “<code>--help</code>” at the end.</p>
+                                    <p>To learn about the main commands, see the Wikipedia page on Unix Commands, and if you’re on Linux or Mac, you can also use the “<code>man</code>” command to open the relevant manual page, (e.g. “<code>man ls</code>”
+                                        to learn about the “ls” command). Manual pages open in the “less” program - see details below.</p>
+                                    <p>Commands that have subcommands, such as Git which has “<code>git add</code>”, “<code>git commit</code>” etc., and also generally have a “<code>help</code>” subcommand. So, for example, you can use “<code>git help add</code>”
+                                        to learn about the “<code>add</code>” subcommand. Though, specifically in the case of Git, you can get the same information through running “<code>man git-add</code>”.</p>
+                                </li><br />
+
+                                <li>
+                                    <p><strong>If you’re stuck in an editor, don’t panic -</strong><br />
+                                        <ul>
+                                            <li><em>Less -</em> “less” is a pager program that may automatically open on the command line whenever you ask to read a very long file or output (e.g. when using “<code>git log</code>” on a repository with lots
+                                                of history).</p>
+                                    <p>You can use the arrow keys or the page up/down keys to scroll around in Less. You can also use the “/” key to search for a specific part of the text and the “<code>n</code>” key to go to the next match.</p>
+                                    <p>Use the “q” key to quit Less.</p>
+                                    </li>
+
+                                    <li>
+                                        <p><em>Vim -</em> “vim” (VI improved) is the default editor used in Bash, and though it’s very powerful, it’s possibly the hardest editor for beginners to learn. The most common reason students get stuck in vim is
+                                            when they use “<code>git commit</code>” without the “-m” parameter, so Vim opens up for them to add a message manually.</p>
+                                        <p>Vim is a mode-based editor that has several distinct modes of operation. Vim always starts in the “normal mode” where you can give it commands to change the text, but cannot edit it directly. Click “i” to go into
+                                            the “insert mode” and edit the text directly, and then click the Escape key to go back to the normal mode.</p>
+                                        <p>When you’re done, click Shift+Z+Z to save the text and exit. Or, type “<code>:q!</code>” to quit without saving.</p>
+                                        <p>If you plan to spend a lot of time in the command line, it might be worth your while to use the “vimtutor” command to learn a bit about how Vim works, and there are also many good learning resources online.</p>
+                                    </li>
+                                    </ul>
+
+                                </li>
+
+                                <li>
+                                    <p><strong>If you’re stuck in a long operation, don’t panic -</strong> If you started a command that seems to run forever, or one that is actually intended to run forever until interrupted (like “<code>http-server</code>”),
+                                        you can usually stop it by clicking Ctrl+C, which sends it an interrupt signal, that makes it terminate (except if the program is built to actively resist it).</p>
+                                    <p>Alternatively, in bash (but not in cmd), you can also click Ctrl+Z to temporarily stop the program, and then run “fg” to resume it in the foreground, or “bg” to resume it in the background, and thus letting you type
+                                        in other commands in the foreground (though in most cases, when you want to run multiple command line programs, it’s easier to just open a new terminal). If clicking Ctrl+C doesn’t terminate the program, you can
+                                        also click Ctrl+Z to stop the program and then run “<code>kill -9 %1</code>” to forcefully kill it (“-9” signifies the kill signal, and “%1” points to the first program currently running in the shell). Or, alternatively,
+                                        you can of course also just close the terminal window.</p>
+                                    <p>If you cannot launch a server since the port is already in use - When using frameworks like Django and Flask, you may come across the following warning: ‘Error: That port is already in use’. This means that you are
+                                        attempting to run two separate server processes (or more simply, instances of your code) on the same port (which isn’t allowed).</p>
+                                    <p>This is relatively straightforward to handle if you know what the other process is and can either go back to using that one, or kill it manually. It’s a little trickier if you don’t know what that other running process
+                                        is.
+                                    </p>
+                                    <p>Fear not! If you’re using Mac or Linux, you can use the following command to find this out:<br /> “lsof -i tcp:”<br /> By default, Django and Flask have their own distinct port numbers i.e. 8000 and 5000 respectively.
+                                        So when you experience this error on Django, the command you would enter is:<br /> “<code>lsof -i tcp:8000</code>”</p>
+                                    <p>This command should return an output similar to this:</p>
+                                    <img src="img/lsof-command-460x42.png" alt="" width="460" height="42" />
+                                    <p>The important piece of info to note in this table is the PID (Process Identifier). You will use the PID when you run the kill command. For example to kill the first process we would run the command “<code>kill -9 1736”</code>.
+                                        You can repeat this kill command with each PID to kill all browsers to clear the port. Alternatively if you know the PID for the single process you want to run, you can keep this one running - and kill off every
+                                        other process to fix the error.</p>
+                                    <p>And if you’re on Windows, the procedure is similar, but the tools are different. Launch an administrator cmd shell by right-clicking the Command Prompt icon in the Start menu and choosing "Run as administrator", and
+                                        then use the following commands: “<code>netstat -o -b -n</code>” to list the different processes, and “<code>taskkill /f /pid 1736</code>” to kill the process you found.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Nothing Helps? - Ask Someone
+        </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                        <div class="panel-body">
+                            <p>If none of the above helped you solve your issue, write down your problem and everything that you tried, and then ask another person. In any case, spend some time to write down your question in detail, what you did to address
+                                it so far and include your code (either a specific snippet, or a link to the full project on GitHub).</p>
+
+                            <ul>
+                                <li><strong>Ask on <a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a> -</strong> If you can’t find an existing answer for your question on Stack Overflow, you can create a user account on the site and ask
+                                    it yourself. If you write a clear and detailed question, you’ll often get good answers (or at least a link to an existing relevant answer) within less than half an hour. Make an effort to follow the <a href="http://stackoverflow.com/help/how-to-ask"
+                                        target="_blank">guidelines</a>, or the question may be down-voted.</li><br />
+                                <li><strong>Ask on <a href="https://code-institute-room.slack.com/" target="_blank">Slack</a> -</strong> If your question is directly related to the Code Institute units and exercises, it’s a great idea to ask it on the three
+                                    per-stream channels on Slack (e.g. #stream1-frontend). You would often get an answer within less than an hour (depending on the time of day and how many people are logged on), and you will get an assured response within
+                                    48 hours. You can also use the question to begin a more general discussion about the issue, which might be relevant for other students as well.</li><br />
+                                <li><strong>Ask our tutors -</strong> Code Institute’s tutors are here to help you with whatever coding related questions you may have, but depending on the time of day, you might need to wait in queue a bit before while our
+                                    tutors help other students. To make the best use of tutoring support, you should write down all aspects of the problem and everything you tried so far. And at the end of the tutoring session, we encourage you to consider
+                                    (and ask, if needed) “how could I have solved this myself?”.</li><br>
+                                <li><strong>Ask your mentor -</strong> Your mentor is there to help you with whatever you need, but you only have limited mentoring hours. Also, you would often only have a single meeting a week (this depends on the specific
+                                    interaction you agreed on with your mentor). So it’s generally better to leave your mentoring sessions for the more general problems and discussions.<br /> If you do end up getting help from your mentor about a relatively
+                                    specific question, be sure to ask your mentor afterwards - “how could I have solved this myself?”.</li><br />
+                            </ul>
+                            <h2>Perspectives on getting help from others</h2>
+                            <p>We’ll end this section with two perspectives on asking others for help:</p>
+                            <ol>
+                                <li>
+                                    <p><strong>No one can learn for you</strong> - Real learning requires that you confront your knowledge gaps, and that’s something you have to embark on yourself. You have to be able to look inside yourself and say something
+                                        like:
+                                    </p>
+                                    <p>“I don’t understand this. I expected it to be X, but from my observation, it seems that it’s actually Y. I need to reconcile my understanding of the world with this new observation.”</p>
+                                    <p>That’s the perhaps the hardest part of learning, and something that you can’t really avoid. After you’ve done that and recognised what is that you don’t know (or thought you knew, but discovered that it just isn’t so),
+                                        you should then seek to acquire more information, from other people, or written resources. Some students have a tendency to try to skip on that introspective stage, and miss out on a lot of learning. Just asking
+                                        others for more information or solutions to specific problems would not help you learn, unless you put the time into organising your knowledge and strive for real understanding.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Learning is a social experience</strong> - The main reason for many of us to learn new things is to be able to join a new social group or improve our standing within it. We choose to learn because we want to
+                                        know the same things that others that we look up to know. And this is especially true when learning to become a coder - a lucrative profession, which is quite meritocratic; you need to show your understanding of
+                                        many topics to be able to become a strong developer, and land a good job.</p>
+                                    <p>On the other hand, coding can also sometimes be a very lonely and frustrating endeavour. So getting in touch with other people and asking for help and collaboration is something that we all occasionally want to do,
+                                        to get reassurance about our learning path, compare ourselves to others, regain confidence (since everyone else is also constantly learning new things), enforce that feeling of being part of a community and just
+                                        feel less alone when walking this difficult path.</p>
+                                    <p>Sometimes, when you think you just want to solve a specific problem, what you actually want deeper down is to talk about it with others and collaborate with them.<br /> The community on Slack can be very helpful, and
+                                        in some cases you’ll find that just sharing your issues with others, and taking part in the community, will help you gain the energy and motivation to persevere on the journey.</p>
+                                </li>
+                            </ol>
+                            <p>We believe that both of these perspectives hold much truth in them. So let’s sum up with this advice - strive to learn and accomplish as much as you can yourself, but don’t forget to rely on the community of learners and practitioners
+                                when you need them. And help others when you can, because at the end of the day, we all benefit from better learning and a stronger community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

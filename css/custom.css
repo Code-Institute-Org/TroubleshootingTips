@@ -1,0 +1,38 @@
+/*Headings and text*/
+h1{
+  color: #e4562c;
+}
+
+h3, p{
+  color: #4A4A4F;
+}
+
+.navbar-default {
+    background-color: #4A4A4F !important;
+    border-color: #4A4A4F;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: lightgrey;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: transparent;
+}
+
+img{
+  max-height: 30px;
+}
+
+.row{
+  margin-top: 60px;
+}
+
+a, a:hover, a:focus, a:active{
+  color: #e4562c;
+}
+
+section {
+    margin-top: 100px;
+}
